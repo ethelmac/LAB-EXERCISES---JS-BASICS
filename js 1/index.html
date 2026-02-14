@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        .input-group { margin-bottom: 10px; }
+        label { display: inline-block; width: 120px; }
+        .result-box { margin-top: 20px; border-top: 1px solid #ccc; padding-top: 10px; }
+        #sum { color: blue; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <h1>Sum Calculator</h1>
+
+    <div class="input-group">
+        <label for="num1">First Value:</label>
+        <input type="number" id="num1" placeholder="0">
+    </div>
+
+    <div class="input-group">
+        <label for="num2">Second Value:</label>
+        <input type="number" id="num2" placeholder="0">
+    </div>
+
+    <div class="actions">
+        <button id="calcBtn">Calculate</button>
+        <button id="clearBtn">Reset</button>
+    </div>
+
+    <div class="result-box">
+        <p>Total Sum: <span id="sum">0</span></p>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
